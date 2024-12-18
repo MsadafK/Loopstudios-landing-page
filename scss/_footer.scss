@@ -1,0 +1,39 @@
+// FOOTER.SCSS
+
+.footer {
+  background-color: map-get($colors, primary, black);
+  text-align: center;
+  padding: 3rem 1rem;
+
+  &__footer-container {
+    &__logo-image {
+      width: 60%;
+    }
+
+    &__navbar {
+      color: map-get($colors, primary, white);
+      font-weight: 200;
+      margin: 1rem 0;
+
+      &__list {
+        &__item {
+          font-size: 0.85rem;
+          margin: 1rem 0;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__socials-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    &__license-text {
+      color: map-get($colors, primary, dark-gray);
+      font-size: 0.85rem;
+    }
+  }
+}

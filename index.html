@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- header - hero section background image for desktop-->
+      <img
+        class="header__hero-desktop-image"
+        src="./images/desktop/image-hero.jpg"
+        alt="hero section image for desktop"
+      />
+      <!-- header - hero section background image for mobile -->
+      <img
+        class="header__hero-background-image"
+        src="./images/mobile/image-hero.jpg"
+        alt="hero image acting as background for hero and header background"
+      />
+      <section class="header__hero-section">
+        <!-- logo and navbar logo container -->
+        <div class="header__hero-section__logo-and-navbar-icon-container">
+          <!-- logo image -->
+          <img
+            class="header__hero-section__logo-and-navbar-icon-container__logo-image"
+            src="./images/logo.svg"
+            alt="logo image"
+          />
+
+          <!-- navbar hamburger icon -->
+          <img
+            class="header__hero-section__logo-and-navbar-icon-container__hamburger-icon active"
+            src="./images/icon-hamburger.svg"
+            alt="hamburger icon for opening mobile navbar"
+          />
+
+          <!-- navbar close icon -->
+          <img
+            class="header__hero-section__logo-and-navbar-icon-container__close-icon"
+            src="./images/icon-close.svg"
+            alt="close icon for closing mobile navbar"
+          />
+
+          <!-- desktop navbar -->
+          <nav
+            class="header__hero-section__logo-and-navbar-icon-container__desktop-navbar"
+          >
+            <ul
+              class="header__hero-section__logo-and-navbar-icon-container__desktop-navbar__list"
+            >
+              <li
+                class="header__hero-section__logo-and-navbar-icon-container__desktop-navbar__list__item"
+              >
+                About
+              </li>
+              <li
+                class="header__hero-section__logo-and-navbar-icon-container__desktop-navbar__list__item"
+              >
+                Careers
+              </li>
+              <li
+                class="header__hero-section__logo-and-navbar-icon-container__desktop-navbar__list__item"
+              >
+                Events
+              </li>
+              <li
+                class="header__hero-section__logo-and-navbar-icon-container__desktop-navbar__list__item"
+              >
+                Products
+              </li>
+              <li
+                class="header__hero-section__logo-and-navbar-icon-container__desktop-navbar__list__item"
+              >
+                Support
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- mobile navbar -->
+        <nav class="header__hero-section__mobile-navbar">
+          <ul class="header__hero-section__mobile-navbar__list">
+            <li class="header__hero-section__mobile-navbar__list__item">
+              ABOUT
+            </li>
+            <li class="header__hero-section__mobile-navbar__list__item">
+              CAREERS
+            </li>
+            <li class="header__hero-section__mobile-navbar__list__item">
+              EVENTS
+            </li>
+            <li class="header__hero-section__mobile-navbar__list__item">
+              PRODUCTS
+            </li>
+            <li class="header__hero-section__mobile-navbar__list__item">
+              SUPPORT
+            </li>
+          </ul>
+        </nav>
+
+        <!-- hero section title container -->
+        <div class="header__hero-section__title-container">
+          <h1 class="header__hero-section__title-container__title">
+            IMMERSIVE EXPERIENCES THAT DELIVER
+          </h1>
+        </div>
+      </section>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <!-- main highlight section -->
+      <section class="main__highlight-section">
+        <!-- interactive image -->
+        <img
+          class="main__highlight-section__background-image"
+          src="./images/mobile/image-interactive.jpg"
+          alt="a man using a VR headset showcasing how interactive this is"
+        />
+        <!-- highlight title and description container -->
+        <div class="main__highlight-section__title-and-description-container">
+          <h2
+            class="main__highlight-section__title-and-description-container__title"
+          >
+            THE LEADER IN INTERACTIVE VR
+          </h2>
+          <p
+            class="main__highlight-section__title-and-description-container__description"
+          >
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+
+      <!-- image gallery section -->
+      <section class="main__image-gallery-section">
+        <h3 class="main__image-gallery-section__title">OUR CREATIONS</h3>
+        <div class="main__image-gallery-section__images-container">
+          <!-- deep earth -->
+          <div
+            class="main__image-gallery-section__images-container__individual-image-container"
+          >
+            <img
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image deep-earth-image"
+              src="./images/mobile/image-deep-earth.jpg"
+              alt=""
+            />
+            <h4
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image-title"
+            >
+              DEEP <br />EARTH
+            </h4>
+          </div>
+
+          <!-- night arcade -->
+          <div
+            class="main__image-gallery-section__images-container__individual-image-container"
+          >
+            <img
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image night-arcade-image"
+              src="./images/mobile/image-night-arcade.jpg"
+              alt=""
+            />
+            <h4
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image-title"
+            >
+              NIGHT <br />ARCADE
+            </h4>
+          </div>
+
+          <!-- soccer team vr -->
+          <div
+            class="main__image-gallery-section__images-container__individual-image-container"
+          >
+            <img
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image soccer-team-vr-image"
+              src="./images/mobile/image-soccer-team.jpg"
+              alt=""
+            />
+            <h4
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image-title"
+            >
+              SOCCER <br />TEAM VR
+            </h4>
+          </div>
+
+          <!-- the grid -->
+          <div
+            class="main__image-gallery-section__images-container__individual-image-container"
+          >
+            <img
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image the-grid-image"
+              src="./images/mobile/image-grid.jpg"
+              alt=""
+            />
+            <h4
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image-title"
+            >
+              THE <br />GRID
+            </h4>
+          </div>
+
+          <!-- from up above vr -->
+          <div
+            class="main__image-gallery-section__images-container__individual-image-container"
+          >
+            <img
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image from-up-above-vr-image"
+              src="./images/mobile/image-from-above.jpg"
+              alt=""
+            />
+            <h4
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image-title"
+            >
+              FROM UP <br />ABOVE VR
+            </h4>
+          </div>
+
+          <!-- pocket borealis -->
+          <div
+            class="main__image-gallery-section__images-container__individual-image-container"
+          >
+            <img
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image pocket-borealis-image"
+              src="./images/mobile/image-pocket-borealis.jpg"
+              alt=""
+            />
+            <h4
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image-title"
+            >
+              POCKET <br />BOREALIS
+            </h4>
+          </div>
+
+          <!-- the curiosity -->
+          <div
+            class="main__image-gallery-section__images-container__individual-image-container"
+          >
+            <img
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image curiosity-image"
+              src="./images/mobile/image-curiosity.jpg"
+              alt=""
+            />
+            <h4
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image-title"
+            >
+              THE <br />CURIOSITY
+            </h4>
+          </div>
+
+          <!-- make it fisheye -->
+          <div
+            class="main__image-gallery-section__images-container__individual-image-container"
+          >
+            <img
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image fisheye-image"
+              src="./images/mobile/image-fisheye.jpg"
+              alt=""
+            />
+            <h4
+              class="main__image-gallery-section__images-container__individual-image-container__individual-image-title"
+            >
+              MAKE IT<br />
+              FISHEYE
+            </h4>
+          </div>
+        </div>
+
+        <!-- see all button -->
+        <a class="main__image-gallery-section__see-all-button" href="#"
+          >SEE ALL</a
+        >
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__footer-container">
+        <!-- footer logo image -->
+        <img
+          class="footer__footer-container__logo-image"
+          src="./images/logo.svg"
+          alt="logo image"
+        />
+
+        <!-- footer navbar -->
+        <nav class="footer__footer-container__navbar">
+          <ul class="footer__footer-container__navbar__list">
+            <li class="footer__footer-container__navbar__list__item">About</li>
+            <li class="footer__footer-container__navbar__list__item">
+              Careers
+            </li>
+            <li class="footer__footer-container__navbar__list__item">Events</li>
+            <li class="footer__footer-container__navbar__list__item">
+              Products
+            </li>
+            <li class="footer__footer-container__navbar__list__item">
+              Support
+            </li>
+          </ul>
+        </nav>
+
+        <!-- socials icons -->
+        <div class="footer__footer-container__socials-icons">
+          <img src="./images/icon-facebook.svg" alt="" />
+          <img src="./images/icon-twitter.svg" alt="" />
+          <img src="./images/icon-pinterest.svg" alt="" />
+          <img src="./images/icon-instagram.svg" alt="" />
+        </div>
+
+        <!-- license text -->
+        <p class="footer__footer-container__license-text">
+          © 2021 Loopstudios. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

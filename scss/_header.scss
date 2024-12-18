@@ -1,0 +1,99 @@
+// HEADER.SCSS
+
+.header {
+  position: relative;
+
+  // header desktop background image
+  &__hero-desktop-image {
+    width: 100%;
+    display: block;
+    display: none;
+  }
+  // header mobile background image
+  &__hero-background-image {
+    width: 100%;
+    display: block;
+  }
+  &__hero-section {
+    &__logo-and-navbar-icon-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+
+      &__logo-image {
+        width: 60%;
+      }
+
+      &__hamburger-icon,
+      &__close-icon {
+        display: none;
+      }
+
+      &__desktop-navbar {
+        &__list {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 1.5rem;
+          &__item {
+            cursor: pointer;
+            font-size: 0.85rem;
+            color: map-get($colors, primary, white);
+          }
+        }
+        display: none;
+      }
+    }
+    &__title-container {
+      border: 1px solid map-get($colors, primary, white);
+      padding: 1rem;
+      margin: 0 1rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      &__title {
+        font-size: 2.25rem;
+        color: map-get($colors, primary, white);
+      }
+    }
+
+    // mobile navbar
+    &__mobile-navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: map-get($colors, primary, black);
+      z-index: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      display: none;
+
+      &__list {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &__item {
+          color: map-get($colors, primary, white);
+          font-family: map-get($font, josefin);
+          font-size: 1.25rem;
+          font-weight: 300;
+          margin: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

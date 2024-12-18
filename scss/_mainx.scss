@@ -1,0 +1,73 @@
+// MAIN.SCSS
+
+.main {
+  padding: 6rem 1rem 3rem;
+
+  // highlight section
+  &__highlight-section {
+    &__background-image {
+      width: 100%;
+      display: block;
+    }
+
+    &__title-and-description-container {
+      text-align: center;
+      padding: 3rem 1rem;
+
+      &__title {
+        font-size: 1.85rem;
+        color: map-get($colors, primary, black);
+        margin-bottom: 1.5rem;
+      }
+
+      &__description {
+        font-size: 0.85rem;
+        color: map-get($colors, primary, dark-gray);
+      }
+    }
+  }
+
+  // image gallery section
+  &__image-gallery-section {
+    padding: 3rem 0;
+    text-align: center;
+
+    &__title {
+      font-size: 1.85rem;
+      color: map-get($colors, primary, black);
+      margin-bottom: 1rem;
+    }
+    &__images-container {
+      &__individual-image-container {
+        position: relative;
+        text-align: left;
+        &__individual-image {
+          width: 100%;
+          display: block;
+          margin: 1rem 0;
+        }
+        &__individual-image-title {
+          position: absolute;
+          bottom: 1rem;
+          left: 1rem;
+          font-size: 1.35rem;
+          color: map-get($colors, primary, white);
+          font-family: map-get($font, josefin), sans-serif;
+          font-weight: map-get($font-weights, small);
+          line-height: 1;
+        }
+      }
+    }
+
+    &__see-all-button {
+      display: inline-block;
+      margin-top: 1rem;
+      letter-spacing: 2px;
+      border: 1px solid map-get($colors, primary, black);
+      padding: 0.5rem 1rem;
+      border-left: none;
+      cursor: pointer;
+      color: map-get($colors, primary, black);
+    }
+  }
+}

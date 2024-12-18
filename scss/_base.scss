@@ -1,0 +1,7 @@
+// BASE.SCSS
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: map-get($font, alata), sans-serif;
+}
